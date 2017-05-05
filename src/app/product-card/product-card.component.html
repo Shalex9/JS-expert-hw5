@@ -1,0 +1,22 @@
+<form class="example-form">
+  <md-input-container class="example-full-width">
+    <input mdInput placeholder="Название" name="cardName" [(ngModel)]="cardName" (keyup.enter)="getCards()">
+  </md-input-container>
+</form>
+
+
+<md-card class="example-card">
+  <md-card-header>
+    <md-card-title>{{products[counter].name}}</md-card-title>
+  </md-card-header>
+  <img md-card-image src="{{products[counter].url}}">
+  <md-card-content>
+    <p>
+      {{products[counter].description}}
+    </p>
+  </md-card-content>
+  <md-card-actions class="navigation">
+    <button md-button [disabled]="counter==0" (click)="previous()">Назад</button>
+    <button md-button [disabled]="counter==max" (click)="next()"> Вперед</button>
+  </md-card-actions>
+</md-card>

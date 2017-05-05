@@ -1,0 +1,15 @@
+.example-card {
+  width: 400px;
+  margin: 50px auto;
+}
+
+.navigation {
+ display: flex;
+ justify-content: space-between;
+}
+
+.example-form {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+}
